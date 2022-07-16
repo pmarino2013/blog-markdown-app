@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1657318063731,
+      "user": "Pablo Marino",
+      "userId": "113397048662548539595",
+      "fecha": "2022-07-08T22:07:43.731Z",
+      "title": "RollingCoders Campus",
+      "texto": "### Arranca el Campus de Rolling!\n----\n![](https://media.giphy.com/media/26n7b7PjSOZJwVCmY/giphy.gif)\n\n*Listo para arrancar la experiencia más grosa de todas??*"
+    },
+    {
+      "id": 1657927773954,
+      "user": "Mentor Rolling",
+      "userId": "112766425279431991437",
+      "fecha": "2022-07-15T23:29:33.954Z",
+      "title": "JSON-SERVER como crear un servidor de prueba",
+      "texto": "\n![](https://res.cloudinary.com/fazt/image/upload/c_scale,w_400/v1584130492/tutorials/json-server.jpg)\n\nJson-server es una libreria que nos permite crear un servidor de prueba para nuestras aplicaciones frontend.\n\nPara instalarlo solo hay que ir a la web npm [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server) \n\nCrear la base de datos en formato json es sencillo pero debemos ahacerlo en un archivo con el nombre **db.json**"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "name": "typicode",
+      "email": "test@test.com",
+      "imageUrl": ""
+    },
+    {
+      "googleId": "112766425279431991437",
+      "imageUrl": "https://lh3.googleusercontent.com/a-/AFdZucqOGwAzTTxkJzSjKQJvzEyQaAHzdzeTh-fEYaaJ=s96-c",
+      "email": "mentor.rolling@gmail.com",
+      "name": "Mentor Rolling",
+      "givenName": "Mentor",
+      "familyName": "Rolling",
+      "id": "tC62m25"
+    },
+    {
+      "googleId": "113397048662548539595",
+      "imageUrl": "https://lh3.googleusercontent.com/a-/AFdZucoXuBTuwpzvlhiA60y2axzLE5g5tS8jjCmnaQ7PzRg=s96-c",
+      "email": "pmarino2013@gmail.com",
+      "name": "Pablo Marino",
+      "givenName": "Pablo",
+      "familyName": "Marino",
+      "id": "Sq-Vw1r"
+    }
+  ]
+}
