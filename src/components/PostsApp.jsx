@@ -8,27 +8,57 @@ import { getPosts } from "../helpers/fetchApp";
 const PostsApp = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState(null);
+  const [ordenNuevo, setOrdenNuevo] = useState(true);
 
   useEffect(() => {
     getPosts().then((respuesta) => {
       // console.log(respuesta);
       // const datosOrdenados = respuesta.sort((a, b) => a.fecha - b.fecha);
-
-      setPosts(respuesta.reverse());
+      if (ordenNuevo) {
+        setPosts(respuesta.reverse());
+      } else {
+        setPosts(respuesta);
+      }
 
       setLoading(false);
     });
-  }, []);
+  }, [ordenNuevo]);
 
   return (
     <>
       {loading ? (
-        <h3>Cargando...</h3>
+        <h3 className="text-center">Cargando...</h3>
       ) : (
         <>
+          <div className="btn-group my-3">
+            <button
+              className="btn btn-secondary btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ordenar
+            </button>
+            <ul className="dropdown-menu">
+              <li
+                className="dropdown-item ordenar-pointer"
+                onClick={() => setOrdenNuevo(true)}
+              >
+                <span>Más nuevo</span>
+              </li>
+              <li
+                className="dropdown-item ordenar-pointer"
+                onClick={() => setOrdenNuevo(false)}
+              >
+                <span>Más antiguo</span>
+              </li>
+            </ul>
+          </div>
           {posts.map((post) => (
-            <div className="card mb-3" key={post.id}>
+            <div
+              className="card mb-3 animate__animated animate__fadeIn"
+              key={post.id}
+            >
               <Link className="nav-link" to={`/post/${post.id}`}>
                 <div className="card-body">
                   <h5>{post.title}</h5>

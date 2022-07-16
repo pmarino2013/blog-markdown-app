@@ -35,7 +35,7 @@ const EditorScreen = () => {
   return (
     <div className="container">
       <div className="row mt-5">
-        <div className="col-12 col-md-8 offset-md-2">
+        <div className="col-12 col-md-8 offset-md-2 animate__animated animate__fadeIn">
           <h3>Crea tu post </h3>
           <form onSubmit={handleSubmit}>
             <div className="form-group mb-3">
