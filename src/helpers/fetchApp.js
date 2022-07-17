@@ -55,3 +55,34 @@ export const getUserById = async (id) => {
     throw new Error("No se encuentra el usuario en la BD");
   }
 };
+
+export const getComentariosByIdPost = async (idPost) => {
+  try {
+    const resp = await fetch(`http://localhost:8080/comments?postId=${idPost}`);
+    const data = await resp.json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw new Error("No se encuentran los comentarios en la BD");
+  }
+};
+
+export const postComentario = async (datos) => {
+  try {
+    const resp = await fetch("http://localhost:8080/comments", {
+      method: "POST",
+      body: JSON.stringify(datos),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    });
+
+    const data = await resp.json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw new Error("No se pudo guardar el comentario en la BD");
+  }
+};

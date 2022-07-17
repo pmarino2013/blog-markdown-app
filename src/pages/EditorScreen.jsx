@@ -55,7 +55,10 @@ const EditorScreen = () => {
                 value={texto}
                 onChange={(e) => setTexto(e.target.value)}
               ></textarea>
-              <label>Comments</label>
+              <label>Comentarios</label>
+            </div>
+            <div className="text-muted fw-lighter">
+              <small>*Escribe el contenido en formato MarkDown</small>
             </div>
             <div className="mt-2 d-flex justify-content-end">
               <button className="btn btn-primary">Guardar</button>

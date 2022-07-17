@@ -4,7 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 const NavbarApp = () => {
   // const [usuario, setUsuario] = useState({});
   const user = JSON.parse(localStorage.getItem("user"));
-  console.log(user.imageUrl);
   // useEffect(() => {
   //   setUsuario(JSON.parse(localStorage.getItem("user")));
   // }, []);
@@ -30,12 +29,12 @@ const NavbarApp = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" aria-current="page" to="/">
-                Home
+                Inicio
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/edit">
-                Create
+                Crear
               </NavLink>
             </li>
             <li className="nav-item dropdown dropstart">
@@ -47,7 +46,7 @@ const NavbarApp = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img className="img-avatar" src={user?.imageUrl} alt="avatar" />
+                <img className="img-avatar" src={user.imageUrl} alt="avatar" />
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>

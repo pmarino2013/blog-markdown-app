@@ -20,8 +20,31 @@
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "body": "Me gustó el artículo, felicitaciones",
+      "fecha": "2022-07-15T23:29:33.954Z",
+      "postId": 1657927773954,
+      "user": "Sergio Juarez"
+    },
+    {
+      "id": 1658023783702,
+      "body": "Comentario de prueba",
+      "fecha": "2022-07-17T02:09:43.702Z",
+      "postId": 1657927773954,
+      "user": "Mentor Rolling"
+    },
+    {
+      "id": 1658024374718,
+      "body": "comentario de prueba",
+      "fecha": "2022-07-17T02:19:34.718Z",
+      "postId": 1657927773954,
+      "user": "Mentor Rolling"
+    },
+    {
+      "id": 1658024775681,
+      "body": "Fue una excelente experiencia",
+      "fecha": "2022-07-17T02:26:15.681Z",
+      "postId": 1657318063731,
+      "user": "Pablo Marino"
     }
   ],
   "profile": [

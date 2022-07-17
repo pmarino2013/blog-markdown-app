@@ -55,10 +55,7 @@ const PostsApp = () => {
             </ul>
           </div>
           {posts.map((post) => (
-            <div
-              className="card mb-3 animate__animated animate__fadeIn"
-              key={post.id}
-            >
+            <div className="card mb-3 " key={post.id}>
               <Link className="nav-link" to={`/post/${post.id}`}>
                 <div className="card-body">
                   <h5>{post.title}</h5>
